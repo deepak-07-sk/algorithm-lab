@@ -1,0 +1,77 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMTRLCUziLLBGzL52aCUI96",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/deepak-07-sk/algorithm-lab/blob/main/linear%20search\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def linear_search(arr, target):\n",
+        "    \"\"\"\n",
+        "    Perform a linear search on the list to find the target value.\n",
+        "\n",
+        "    Parameters:\n",
+        "    arr (list): The list to search through.\n",
+        "    target: The value to search for.\n",
+        "\n",
+        "    Returns:\n",
+        "    int: The index of the target if found, otherwise -1.\n",
+        "    \"\"\"\n",
+        "    for index, value in enumerate(arr):\n",
+        "        if value == target:\n",
+        "            return index\n",
+        "    return -1\n",
+        "\n",
+        "# Example usage\n",
+        "numbers = [10, 23, 45, 70, 11, 15]\n",
+        "target = 70\n",
+        "result = linear_search(numbers, target)\n",
+        "\n",
+        "if result != -1:\n",
+        "    print(f\"Element found at index {result}\")\n",
+        "else:\n",
+        "    print(\"Element not found in the list\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "d9gxkyNU9GGm",
+        "outputId": "3005880f-24bf-45c6-e30e-a9b6a29c3823"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Element found at index 3\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
